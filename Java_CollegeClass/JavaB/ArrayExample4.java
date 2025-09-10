@@ -1,4 +1,4 @@
-public class Example4 {
+public class ArrayExample4 {
     public static void main(String[] args) {
         int[] x = {1, 3, 5, 7, 19};
         String y ="Quiz";

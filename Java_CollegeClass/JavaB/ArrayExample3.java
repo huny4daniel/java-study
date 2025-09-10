@@ -1,4 +1,4 @@
-public class Example3 {
+public class ArrayExample3 {
     public static void main(String[] args) {
         
         String[] type = {"정수형 변수", "실수(float)형 변수", "문자형 변수"};

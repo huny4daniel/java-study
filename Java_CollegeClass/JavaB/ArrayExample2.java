@@ -1,4 +1,4 @@
-public class Example2 {
+public class ArrayExample2 {
     public static void main(String[] args) {
         String[] student = {"홍길동", "이순신", "을지문덕", "김유신", "김좌진"};
         String[] score = {"85", "90", "97", "88", "87.5"};
