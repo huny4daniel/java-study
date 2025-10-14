@@ -6,6 +6,7 @@ public class Example2_0923 {
         int num1 = scan.nextInt();
         int num2 = scan.nextInt();
         int result;
+        scan.close();
 
         if(num1>num2){
             result = num1-num2;

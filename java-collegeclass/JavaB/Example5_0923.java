@@ -8,6 +8,7 @@ public class Example5_0923 {
         System.out.println("계산 기호를 입력하세요 (+, -, *, /, %)");
         String sign = scan.next();
         int result = 0;
+        scan.close();
 
         switch (sign) {
             case "+": result = num1 + num2; break;

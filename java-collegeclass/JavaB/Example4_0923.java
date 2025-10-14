@@ -5,6 +5,7 @@ public class Example4_0923 {
         System.out.println("계절을 확인하고 싶은 월을 입력하세요");
         int month = scan.nextInt();
         String season;
+        scan.close();
 
         if(month > 12){
             season = "정상적이지 않은 월";

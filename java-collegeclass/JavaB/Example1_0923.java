@@ -5,7 +5,8 @@ public class Example1_0923 {
         System.out.println("정수 하나를 입력하시오: ");
         int num = scan.nextInt();
         String result;
-
+        scan.close();
+        
         if(num%2==0){
             result = "3의 배수가 아닌 짝수";
 

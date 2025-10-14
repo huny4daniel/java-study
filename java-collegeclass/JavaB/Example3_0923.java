@@ -5,6 +5,7 @@ public class Example3_0923 {
         System.out.println("성적을 입력하시오: ");
         int score = scan.nextInt();
         String grade;
+        scan.close();
 
         if (score > 100) {
             grade = "정상적이 않은 성적";
