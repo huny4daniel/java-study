@@ -1,6 +1,9 @@
 import java.util.Scanner;
 class AirConditioner {
 
+   double temp;
+   boolean power;
+   
    AirConditioner(){
       
    }
@@ -9,9 +12,6 @@ class AirConditioner {
       power = b;
    }
 
-   double temp;
-   boolean power;
-   Scanner scan = new Scanner(System.in);
 
    void setPower() {
       power =! power;
@@ -44,6 +44,11 @@ class AirMain{
       AirConditioner Condtioner1 = new AirConditioner();
       AirConditioner Condtioner2 = new AirConditioner();
 
+      Scanner scan = new Scanner(System.in);
+      double setScan1 = scan.nextInt();
+      double setScan2 = scan.nextInt();
+      scan.close();
+
       Condtioner1.setPower();
       Condtioner2.setPower();
 
@@ -52,8 +57,8 @@ class AirMain{
 
       System.out.println("설정하신 온도로 변경합니다");
       
-      Condtioner1.setTemp(18);
-      Condtioner2.setTemp(22);
+      Condtioner1.setTemp(setScan1);
+      Condtioner2.setTemp(setScan2);
       
       Condtioner1.printTemp();
       Condtioner2.printTemp();
