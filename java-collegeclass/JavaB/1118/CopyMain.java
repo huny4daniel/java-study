@@ -1,0 +1,31 @@
+import java.io.*;
+
+class CopyMain {
+    public static void main(String[] args) {
+        try {
+			String s = "";
+            int c;
+
+            FileReader in = new FileReader("CopyMain.java");
+            
+			while((c = in.read()) != -1) {
+				s += (char) c;
+			}
+
+			in.close();
+            
+            FileWriter out = new FileWriter("CopyMain.txt");
+
+            out.write("***** 복사본 *****\n");
+            out.write(s);
+            out.close();
+        }
+        catch(IOException ie) {
+            System.out.println("IO 예외발생");
+        }
+        catch(Exception e) {
+            System.out.println("예외발생");
+        }
+    }
+
+}
