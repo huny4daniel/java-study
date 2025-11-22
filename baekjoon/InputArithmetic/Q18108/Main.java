@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-class Main {
+public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        String n = scan.nextLine();
+        int y = scan.nextInt();
 
-        System.out.println(n + "??!");
+        System.out.println(y - 543);
     }
 }
